@@ -1,0 +1,4 @@
+lex file.l
+yacc -d fil2.y
+g++ lex.yy.c y.tab.c -o out
+./out < input.txt> > output.dot

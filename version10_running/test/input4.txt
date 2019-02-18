@@ -1,0 +1,17 @@
+int main() {
+	int a,b,c,d,e;
+	int temp;
+	temp=0;
+	a=1;
+	b= a+1;
+	c = 12/(3*4);
+	d =  4*5;
+	e=(a*b*(d||e)+c&&d);
+	if(a==b){
+		temp = temp+1;
+	}
+	else{	
+		temp = temp-1;
+	
+	}
+}

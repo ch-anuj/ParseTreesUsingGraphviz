@@ -1,0 +1,13 @@
+int main(){
+	if( a > b){
+	  a = a * b * 8 || b + 1;
+		if( a > b){
+		  a = a * b * 8 || b + 1;
+		}
+		else{
+			a = a * b;
+		}
+		a = a * b * 8 || b + 1;
+	}
+	a = a * b * 8 || b + 1;
+	}

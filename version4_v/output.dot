@@ -1,0 +1,49 @@
+ 
+strict graph G {
+1 [label="type_spec"];
+2 [label="INT"];
+3 [label="expr_stmt"];
+4 [label="SEMICOLON"];
+5 [label="expr_stmt"];
+6 [label="SEMICOLON"];
+7 [label="expr_stmt"];
+8 [label="SEMICOLON"];
+9 [label="stmt"];
+10 [label="stmt_list"];
+11 [label="compound_stmt"];
+12 [label="OPEN_BRAC"];
+13 [label="CLOSE_BRAC"];
+14 [label="stmt"];
+15 [label="iterate_stmt"];
+16 [label="FOR"];
+17 [label="O_BRAC"];
+18 [label="C_BRAC"];
+19 [label="stmt"];
+20 [label="stmt_list"];
+21 [label="compound_stmt"];
+22 [label="OPEN_BRAC"];
+23 [label="CLOSE_BRAC"];
+24 [label="body"];
+25 [label="MAIN"];
+26 [label="O_BRAC"];
+27 [label="C_BRAC"];
+28 [label="main_decl"];
+29 [label="func_decls"];
+30 [label="main_unit"];
+1--2 ;
+3--4 ;
+5--6 ;
+7--8 ;
+9--7 ;
+10--9 ;
+11--12, 10, 13 ;
+14--11 ;
+15--16, 17, 3, 5, 18, 14 ;
+19--15 ;
+20--19 ;
+21--22, 20, 23 ;
+24--21 ;
+28--1, 25, 26, 27, 24 ;
+30--29, 28 ;
+
+}

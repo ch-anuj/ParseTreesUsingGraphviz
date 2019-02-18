@@ -1,0 +1,36 @@
+lex file.l
+yacc -d fil2.y
+g++ lex.yy.c y.tab.c -o out
+./out < input.txt> > output.dot
+
+
+
+
+Test Cases
+
+
+int main(){
+	  a = a * b * 8 || b + 1 - 8 * 7 >= 24 && 78 + 62;
+	}
+
+
+int main(){
+	if( a > b){
+	  a = a * b * 8 || b + 1;
+	}
+	}
+
+
+int main(){
+	if( a > b){
+	  a = a * b * 8 || b + 1;
+		if( a > b){
+		  a = a * b * 8 || b + 1;
+		}
+		else{
+			a = a * b;
+		}
+		a = a * b * 8 || b + 1;
+	}
+	a = a * b * 8 || b + 1;
+	}

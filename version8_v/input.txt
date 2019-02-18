@@ -1,0 +1,16 @@
+int foo(int a){
+	if(4 < c || b && a + a - a && a){
+		int a ;
+		a = a + a ;
+		a = 5 + 5 * 6 - 5;
+		a = a * a && a - a;
+		a = foo(a);
+	}
+}
+int main() {
+		int a ;
+		a = a + a ;
+		a = 5 + 5 * 6 - 5;
+		a = a * a && a - a;
+		a = foo(a);
+}

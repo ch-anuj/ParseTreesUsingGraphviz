@@ -1,0 +1,15 @@
+graph G {
+    1 [label="S"];
+    2 [label="E"];
+    3 [label="E"];
+    4 [label="A"];
+    5 [label="T"];
+    6 [label="T"];
+    7 [label="T"];
+    8 [label="B"];
+    9 [label="F"];
+    1:2;
+    2:3,4,5;
+    3:6;
+    6:7,8,9;
+}
